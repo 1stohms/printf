@@ -39,7 +39,6 @@ int (*get_specifier(char *s))(va_list ap, params_t *params)
 	}
 	return (NULL);
 }
-
 /**
  * get_print_func - finds the format function
  * @s: string of the format
@@ -79,6 +78,7 @@ int get_flag(char *s, params_t *params)
 			break;
 		case '#':
 			i = params->hashtag_flag = 1;
+			
 			break;
 		case '-':
 			i = params->minus_flag = 1;
